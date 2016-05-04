@@ -3,6 +3,8 @@ React Audio Player
 
 HTML5 react audio player.
 
+[Modified version of react-cl-audio-player](https://github.com/CezarLuiz0/react-cl-audio-player)
+
 ### Usage
 
 ```
@@ -33,8 +35,4 @@ You may want to change the host in `server.js` and `webpack.config.js` from `loc
 
 ### Resources
 
-* A big thanks to Cezar Luiz.
-* [react-hot-loader on Github](https://github.com/gaearon/react-hot-loader)
-* [Integrating JSX live reload into your workflow](http://gaearon.github.io/react-hot-loader/getstarted/)
-* [Troubleshooting guide](https://github.com/gaearon/react-hot-loader/blob/master/docs/Troubleshooting.md)
-* Ping dan_abramov on Twitter or #reactjs IRC
+* [react-cl-audio-player](https://github.com/CezarLuiz0/react-cl-audio-player)
