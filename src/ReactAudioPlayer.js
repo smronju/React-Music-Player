@@ -112,11 +112,17 @@ class ReactAudioPlayer extends Component {
 
         const { active, play, progress } = this.state;
 
+        let coverClass = classnames('player-cover', {'no-height': !!!active.cover });
+        let playPauseClass = classnames('fa', {'fa-pause': play}, {'fa-play': !play});
+        let volumeClass = classnames('fa', {'fa-volume-up': !this.state.mute}, {'fa-volume-off': this.state.mute});
+        let repeatClass = classnames('player-btn small repeat', {'active': this.state.repeat});
+        let randomClass = classnames('player-btn small random', {'active': this.state.random });
+
         return (
             <div className="player-container">
                 <audio src={active.url} autoPlay={this.state.play} preload="auto" ref="player"></audio>
 
-                <div className="player-cover" style={{backgroundImage: 'url('+ active.cover +')'}}></div>
+                <div className={coverClass} style={{backgroundImage: 'url('+ active.cover +')'}}></div>
 
                 <div className="artist-info">
                     <h2 className="artist-name">{active.artist.name}</h2>
@@ -131,7 +137,7 @@ class ReactAudioPlayer extends Component {
                 <div className="player-options">
                     <div className="player-buttons player-controls">
                         <button onClick={this.toggle} className="player-btn big" title="Play/Pause">
-                            <i className={classnames('fa', {'fa-pause': play}, {'fa-play': !play})} />
+                            <i className={playPauseClass} />
                         </button>
 
                         <button onClick={this.previous} className="player-btn medium" title="Previous Song">
@@ -145,14 +151,14 @@ class ReactAudioPlayer extends Component {
 
                     <div className="player-buttons">
                         <button className="player-btn small volume" onClick={this.toggleMute} title="Mute/Unmute">
-                            <i className={classnames('fa', {'fa-volume-up': !this.state.mute}, {'fa-volume-off': this.state.mute})} />
+                            <i className={volumeClass} />
                         </button>
 
-                        <button className={classnames('player-btn small repeat', {'active': this.state.repeat})} onClick={this.repeat} title="Repeat">
+                        <button className={repeatClass} onClick={this.repeat} title="Repeat">
                             <i className="fa fa-repeat" />
                         </button>
 
-                        <button className={classnames('player-btn small random', {'active': this.state.random })} onClick={this.randomize} title="Shuffle">
+                        <button className={randomClass} onClick={this.randomize} title="Shuffle">
                             <i className="fa fa-random" />
                         </button>
                     </div>
