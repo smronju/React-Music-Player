@@ -3,6 +3,34 @@ var webpack = require('webpack');
 
 module.exports = {
     devtool: 'eval',
+
+    // Enable to build
+    /* entry: [
+        'webpack-dev-server/client?http://localhost:3000',
+        'webpack/hot/only-dev-server',
+		'./src/index.js',
+	],
+	output: {
+		path: 'dist',
+		filename: '[name].js',
+		libraryTarget: 'umd',
+		library: '[name]'
+	},
+    externals: {
+		'react': {
+			commonjs: 'react',
+			commonjs2: 'react',
+			amd: 'React',
+			root: 'React'
+		},
+		'react-dom': {
+			commonjs: 'react-dom',
+			commonjs2: 'react-dom',
+			amd: 'ReactDOM',
+			root: 'ReactDOM'
+		}
+	},*/
+
     entry: [
         'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',

@@ -1,9 +1,9 @@
-import './ReactAudioPlayer.scss';
+import './ReactMusicPlayer.scss';
 import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
 import shuffle from 'shuffle-array';
 
-class ReactAudioPlayer extends Component {
+class ReactMusicPlayer extends Component {
     state = {
         active: this.props.songs[0],
         current: 0,
@@ -169,9 +169,9 @@ class ReactAudioPlayer extends Component {
     }
 }
 
-ReactAudioPlayer.propTypes = {
-    songs: PropTypes.array.isRequired,
-    autoplay: PropTypes.bool
+ReactMusicPlayer.propTypes = {
+    autoplay: PropTypes.bool,
+    songs: PropTypes.array.isRequired
 };
 
-export default ReactAudioPlayer;
+export default ReactMusicPlayer;

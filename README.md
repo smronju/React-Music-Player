@@ -15,7 +15,7 @@ open http://localhost:3000
 
 ### Linting
 
-This react audio player project includes React-friendly ESLint configuration.
+This react music player includes React-friendly ESLint configuration.
 
 ```
 npm run lint

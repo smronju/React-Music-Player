@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AudioPlayer from './ReactAudioPlayer';
+import ReactMusicPlayer from './ReactMusicPlayer';
 
 let songs = [
     {
@@ -60,4 +60,4 @@ let songs = [
     }
 ];
 
-ReactDOM.render(<AudioPlayer songs={songs} autoplay />, document.getElementById('root'));
+ReactDOM.render(<ReactMusicPlayer songs={songs} autoplay />, document.getElementById('root'));
