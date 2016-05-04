@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+    "url": "https://github.com/smronju/React-Audio-Player"
   },
   "keywords": [
     "react",
@@ -24,9 +24,9 @@
   "author": "Mohammad Shoriful Islam Ronju <smronju@gmail.com> (http://github.com/smronju)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+    "url": "https://github.com/smronju/React-Audio-Player/issues"
   },
-  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "homepage": "https://github.com/smronju/React-Audio-Player",
   "devDependencies": {
     "babel-core": "^6.0.20",
     "babel-eslint": "^4.1.3",
