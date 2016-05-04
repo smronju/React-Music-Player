@@ -1,7 +1,7 @@
 {
-    "name": "react-audio-player",
+    "name": "react-music-player",
     "version": "1.0.0",
-    "description": "HTML5 audio player for react lovers.",
+    "description": "HTML5 music player for react lovers.",
     "scripts": {
         "start": "node server.js",
         "lint": "eslint src"

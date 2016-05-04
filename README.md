@@ -1,7 +1,7 @@
-React Audio Player
+React Music Player
 =====================
 
-HTML5 react audio player.
+HTML5 react music player.
 
 [Modified version of react-cl-audio-player](https://github.com/CezarLuiz0/react-cl-audio-player)
 
