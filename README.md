@@ -6,7 +6,7 @@ A simple HTML5 music player with ReactJS and CSS3.
 [Modified version of react-cl-audio-player](https://github.com/CezarLuiz0/react-cl-audio-player)
 
 
-### To build the examples locally, run:
+### To see the examples locally, run:
 
 ```
 npm install
@@ -23,11 +23,11 @@ You can also use the standalone build by including `dist/ReactMusicPlayer.js` in
 
 ```
 npm install react-music-player --save
-
+```
 
 ### Usage
 
-To use, just call the CLAudioPlayer instance and render it.
+To use, just call the ReactMusicPlayer instance and render it.
 
 ```
 import ReactMusicPlayer from 'react-music-player';
