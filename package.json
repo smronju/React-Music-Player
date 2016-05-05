@@ -1,52 +1,54 @@
 {
-    "name": "react-music-player",
-    "version": "1.0.0",
-    "description": "HTML5 music player for react lovers.",
-    "scripts": {
-        "start": "node server.js",
-        "lint": "eslint src",
-		"dist": "webpack"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/smronju/React-Audio-Player"
-    },
-    "keywords": [
-        "react",
-        "reactjs",
-        "react-component",
-        "audio",
-        "music",
-        "player",
-        "html5"
-    ],
-    "author": "Mohammad Shoriful Islam Ronju <smronju@gmail.com> (http://github.com/smronju)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/smronju/React-Audio-Player/issues"
-    },
-    "homepage": "https://github.com/smronju/React-Audio-Player",
-    "devDependencies": {
-        "babel-core": "^6.0.20",
-        "babel-eslint": "^6.0.4",
-        "babel-loader": "^6.0.1",
-        "babel-preset-es2015": "^6.0.15",
-        "babel-preset-react": "^6.0.15",
-        "babel-preset-stage-0": "^6.0.15",
-        "css-loader": "^0.23.1",
-        "eslint": "^2.9.0",
-        "eslint-plugin-react": "^5.0.1",
-        "node-sass": "^3.7.0",
-        "react-hot-loader": "^1.3.0",
-        "sass-loader": "^3.2.0",
-        "style-loader": "^0.13.1",
-        "webpack": "^1.13.0",
-        "webpack-dev-server": "^1.12.1"
-    },
-    "dependencies": {
-        "classnames": "^2.2.5",
-        "react": "^15.0.1",
-        "react-dom": "^15.0.1",
-        "shuffle-array": "^1.0.0"
-    }
+  "name": "react-music-player",
+  "version": "1.0.0",
+  "description": "HTML5 music player for react lovers.",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "./node_modules/.bin/babel src --out-dir dist",
+    "prepublish": "npm run build",
+    "example": "webpack-dev-server --config example/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smronju/React-Audio-Player"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "audio",
+    "music",
+    "player",
+    "html5"
+  ],
+  "author": "Mohammad Shoriful Islam Ronju <smronju@gmail.com> (http://github.com/smronju)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smronju/React-Audio-Player/issues"
+  },
+  "homepage": "https://github.com/smronju/React-Audio-Player",
+  "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-core": "^6.0.20",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.0.1",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.9.0",
+    "eslint-plugin-react": "^5.0.1",
+    "node-sass": "^3.7.0",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "shuffle-array": "^1.0.0"
+  }
 }

@@ -1,38 +1,104 @@
 React Music Player
 =====================
 
-HTML5 react music player.
+A simple HTML5 music player with ReactJS and CSS3.
 
 [Modified version of react-cl-audio-player](https://github.com/CezarLuiz0/react-cl-audio-player)
 
-### Usage
+
+### To build the examples locally, run:
 
 ```
 npm install
-npm start
-open http://localhost:3000
+npm run example
 ```
 
-### Linting
+Then open [`localhost:8080`](http://localhost:8080/webpack-dev-server/) in a browser.
 
-This react music player includes React-friendly ESLint configuration.
+## Installation
+
+The easiest way to use react-music-player-player is to install it from NPM and include it in your own React build process (using [Browserify](http://browserify.org), [Webpack](http://webpack.github.io/), etc).
+
+You can also use the standalone build by including `dist/ReactMusicPlayer.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
 
 ```
-npm run lint
+npm install react-music-player --save
+
+
+### Usage
+
+To use, just call the CLAudioPlayer instance and render it.
+
+```
+import ReactMusicPlayer from 'react-music-player';
+
+<ReactMusicPlayer songs={songs} autoplay />
 ```
 
-### Using `0.0.0.0` as Host
+### Properties
 
-You may want to change the host in `server.js` and `webpack.config.js` from `localhost` to `0.0.0.0` to allow access from same WiFi network. This is not enabled by default because it is reported to cause problems on Windows. This may also be useful if you're using a VM.
+* songs - An array with the object songs - required
+* songs[0].url - string
+* songs[0].cover - string - optional
+* songs[0].artist - object
+* songs[0].artist.name - string
+* songs[0].artist.song - string
+* autoplay - Is autoplay?
 
-### Dependencies
+Songs model:
 
-* React
-* Webpack
-* [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
-* [babel-loader](https://github.com/babel/babel-loader)
-* [react-hot-loader](https://github.com/gaearon/react-hot-loader)
+```
+var songs = [
+  {
+    url: 'path/to/mp3',
+    cover: 'path/to/jpeg',
+    artist: {
+      name: 'Metallica',
+      song: 'Fuel'
+    }
+  },
+  {
+    url: 'path/to/your/mp3',
+    artist: {
+      name: 'X Japan',
+      song: 'Art of Life'
+    }
+  }
+];
 
-### Resources
+```
 
-* [react-cl-audio-player](https://github.com/CezarLuiz0/react-cl-audio-player)
+#### CSS classes
+* .no-height - A helper class for songs without covers
+* .player-container
+* .player-cover
+* .artist-info
+* .artist-name
+* .artist-song-name
+* .player-progress-container
+* .player-progress-value
+* .player-options
+* .player-buttons
+* .player-btn
+* .player-btn i (.fa .fa-play .fa-pause .fa-volume .fa-volume-off .fa-forward .fa-backward .fa-repeat .fa-random)
+* .player-btn.big.medium.small.active.volume:disabled
+* .player-controls
+
+
+
+### Notes
+
+Works perfectly in Chrome, Firefox and Safari. No test in IE.
+
+
+## Development (`src`, `lib` and the build process)
+
+**NOTE:** The source code for the component is in `src`. A UMD bundle is also built to `dist`, which can be included without the need for any build system.
+
+To build and serve the examples, run `npm run build`, `npm run example`.
+
+## License
+
+MIT License.
+
+Copyright (c) 2015 smronju.
