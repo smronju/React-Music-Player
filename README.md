@@ -1,8 +1,7 @@
 React Music Player
 =====================
 
-A simple HTML5 music player with ReactJS and CSS3.
-
+A simple HTML5 music player with ReactJS and CSS3.  
 [Modified version of react-cl-audio-player](https://github.com/CezarLuiz0/react-cl-audio-player)
 
 
@@ -31,7 +30,6 @@ To use, just call the ReactMusicPlayer instance and render it.
 
 ```
 import ReactMusicPlayer from 'react-music-player';
-
 <ReactMusicPlayer songs={songs} autoplay />
 ```
 
@@ -45,7 +43,7 @@ import ReactMusicPlayer from 'react-music-player';
 * songs[0].artist.song - string
 * autoplay - Is autoplay?
 
-Songs model:
+#### Songs model:
 
 ```
 var songs = [
@@ -91,7 +89,7 @@ var songs = [
 Works perfectly in Chrome, Firefox and Safari. No test in IE.
 
 
-## Development (`src`, `lib` and the build process)
+## Development (`src` and the build process)
 
 **NOTE:** The source code for the component is in `src`. A UMD bundle is also built to `dist`, which can be included without the need for any build system.
 
