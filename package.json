@@ -6,7 +6,7 @@
     "lint": "eslint src",
     "build": "./node_modules/.bin/babel src --out-dir dist",
     "prepublish": "npm run build",
-    "example": "webpack-dev-server --config example/webpack.config.js"
+    "example": "node_modules/.bin/webpack-dev-server --config example/webpack.config --port 9001"
   },
   "repository": {
     "type": "git",
